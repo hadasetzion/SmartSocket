@@ -1,0 +1,41 @@
+﻿@model BusinessesInterface.Models.Address
+
+@{
+    ViewBag.Title = "login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@using (Html.BeginForm("LoginResult", "DeviceUsage", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-design">
+    <h2 class="heading2">Please log in</h2>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<div class="form-group">
+    <label class="form-label">User Name</label>
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-editor" } })
+        @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="form-label">Password</label>
+    <div class="col-md-10">
+        @Html.PasswordFor(model => model.Password, new { htmlAttributes = new { @class = "form-editor" } })
+        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+    </div>
+</div>
+<p> </p>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Login" class="submit-button" />
+        </div>
+    </div>
+</div>
+}

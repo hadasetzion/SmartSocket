@@ -1,0 +1,62 @@
+﻿@model BusinessesInterface.Models.Address
+
+@{
+    ViewBag.Title = "List of Items";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="table-page">
+
+    <h2 class="heading2">Sockets Controller</h2>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.LabelForModel("Socket Number")
+            </th>
+            <th>
+                @Html.LabelForModel("Table Number")
+            </th>
+            <th>
+                @Html.LabelForModel("Status")
+            </th>
+            <th>
+                @Html.LabelForModel("Health Check")
+            </th>
+
+        </tr>
+
+        @foreach (var device in Model.Devices)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => device.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => device.Table)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => device.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => device.HealthCheck)
+                </td>
+                <td>
+                    @Html.ActionLink("Turn off", "De_Activation", new { id = device.Id } , new { @class = "button-link-small" })
+                </td>
+            </tr>
+        }
+    </table>
+
+    <p> </p>
+
+    <span class="box">
+        @Html.ActionLink("Turn off all sockets", "De_Activation_All", new { id = Model.Id }, new { @class = "button-link-small" })
+    </span>
+    <p> </p>
+
+    <span class="box">
+        <a class="button-link-small" href="/DeviceUsage/Index" style="text-decoration: none;">Back to all actions</a>
+    </span>
+</div>
+
+<script src="~/bundles/jqueryval"></script>

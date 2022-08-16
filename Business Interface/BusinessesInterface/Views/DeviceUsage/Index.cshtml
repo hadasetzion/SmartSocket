@@ -1,0 +1,41 @@
+﻿@model BusinessesInterface.Models.Address
+
+@{
+    ViewBag.Title = "List of Items";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="text-page">
+
+    <h2 class="heading2">Please Choose An Action</h2>
+
+    <span class="box-big">
+        <a class="button-link" href="/DeviceUsage/DevicesController" style="text-decoration: none;">Device Controll Panel</a>
+    </span>
+    <p> </p>
+    <span class="box-big">
+        <a class="button-link" href="/DeviceUsage/ShowRecent" style="text-decoration: none;">Recent Usage History</a>
+    </span>
+    <p> </p>
+    <span class="box-big">
+        <a class="button-link" href="/DeviceUsage/ShowAll" style="text-decoration: none;">All Usage History</a>
+    </span>
+    <p> </p>
+    <span class="box-big">
+        <a class="button-link" href="/DeviceUsage/SearchSocket" style="text-decoration: none;">Usage History By Socket Number</a>
+    </span>
+    <p> </p>
+    <span class="box-big">
+        <a class="button-link" href="/DeviceUsage/SearchDate" style="text-decoration: none;">Usage History By Specific Date</a>
+    </span>
+    <p> </p>
+    <span class="box-big">
+        <a class="button-link" href="/DeviceUsage/SearchSinceDate" style="text-decoration: none;">Usage History Since Date</a>
+    </span>
+    <p> </p>
+    <span class="box-big">
+        <a class="button-link" href="/DeviceUsage/ShowTablesMap" style="text-decoration: none;">Sockets-Tables View</a>
+    </span>
+    <p> </p>
+
+</div>
+<script src="~/bundles/jqueryval"></script>

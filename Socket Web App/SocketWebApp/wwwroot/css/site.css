@@ -1,0 +1,229 @@
+﻿html {
+  font-size: 14px;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.text-center {
+    color: #22333B;
+    background-color: #f4f1de;
+    padding: 20px;
+    padding-top: 90px;
+    padding-bottom: 200px;
+    scroll-padding-bottom: 100px;
+    font-family: 'Roboto Slab', serif;
+    background-image: url("background2.jpg");
+    background-size: cover;
+}
+
+.text-center-big {
+    color: #22333B;
+    background-color: #f4f1de;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 400px;
+    scroll-padding-bottom: 100px;
+    font-family: 'Roboto Slab', serif;
+    background-image: url("background4.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.image-background1{
+    color: #22333B;
+    background-color: #f4f1de;
+    padding: 20px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    scroll-padding-bottom: 100px;
+    font-family: 'Roboto Slab', serif;
+    background-image: url("background2.jpg");
+    background-size: cover;
+}
+
+a.button-link {
+    width: 300px;
+    height: 100px;
+    color: #C6AC8F;
+    font-family: 'Literata', serif;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a.button-link:hover {
+    color: #5E503F;
+}
+
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: #22333B;
+    box-shadow: 2px 2px 4px #5E503F;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+span.box:hover {
+    background-color: #EAE0D5;
+}
+
+.box-free {
+    display: inline-block;
+    width: stretch;
+    height: 50px;
+    background-color: #22333B;
+    box-shadow: 2px 2px 4px #5E503F;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+span.box-free:hover {
+    background-color: #EAE0D5;
+}
+
+.heading1 {
+    font-size: 60px;
+    color: #22333B;
+    font-family: 'Roboto Slab', serif;
+}
+
+.heading2 {
+    font-size: 40px;
+    color: #22333B;
+    font-family: 'Roboto Slab', serif;
+}
+
+.heading3 {
+    font-size: 30px;
+    color: #22333B;
+    font-family: 'Roboto Slab', serif;
+}
+
+.p1{
+    font-size: 20px;
+    color: #22333B;
+    font-family: 'Roboto Slab', serif;
+}
+
+.text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #22333B;
+}
+
+.text-page {
+    color: #22333B;
+    background-color: #EDEDE9;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    scroll-padding-bottom: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.message-page {
+    color: #22333B;
+    background-color: #EDEDE9;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 400px;
+    scroll-padding-bottom: 100px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    background-image: url("background2.jpg");
+    background-size: cover;
+}
+
+
+.nav-item {
+    font-family: 'Literata', serif;
+    color: #4A4E69;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: #5E503F
+}
+
+.navbar-brand {
+    font-family: 'Literata', serif;
+    color: #22333B;
+    font-size: 40px;
+}
+
+.form-label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #8D8D8E;
+}
+
+.form-editor {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    border: 1px solid #8D8D8E;
+}
+
+.submit-button {
+    display: inline-block;
+    color: #EAE0D5;
+    background-color: #22333B;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 10px;
+    font-family: 'Literata', serif;
+    font-size: 20px;
+}
+
+.form-design {
+    color: #22333B;
+    background-color: #f4f1de;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    scroll-padding-bottom: 100px;
+    font-family: 'Roboto Slab', serif;
+    background-image: url("background3.jpg");
+    background-size: cover;
+}
+
+.setting-page {
+    color: #22333B;
+    background-color: #EDEDE9;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 500px;
+    scroll-padding-bottom: 100px;
+    font-family: 'Roboto Slab', serif;
+    background-image: url("background5.jpg");
+    background-size: cover;
+}
+
+.device-page {
+    color: #22333B;
+    background-color: #EDEDE9;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 500px;
+    scroll-padding-bottom: 100px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    background-image: url("background6.jpg");
+    background-size: cover;
+}
+

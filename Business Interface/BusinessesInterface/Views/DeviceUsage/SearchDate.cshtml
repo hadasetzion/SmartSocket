@@ -1,0 +1,36 @@
+﻿@model BusinessesInterface.Models.TimeSearch
+
+@{
+    ViewBag.Title = "TimeSearch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("ShowDateSearchResults", "DeviceUsage", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-design">
+    <h2 class="heading2">Choose Date</h2>
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.TimeToSearch)
+                @Html.ValidationMessageFor(model => model.TimeToSearch, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <p> </p>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Search" class="submit-button" />
+        </div>
+    </div>
+</div>
+}
+
+<script src="~/bundles/jqueryval"></script>

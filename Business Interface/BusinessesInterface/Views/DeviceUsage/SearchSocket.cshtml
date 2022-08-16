@@ -1,0 +1,39 @@
+﻿@model BusinessesInterface.Models.Device
+
+@{
+    ViewBag.Title = "SearchSocket";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@using (Html.BeginForm("ShowSocketSearchResults", "DeviceUsage", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-design">
+
+    <h2 class="heading2">Enter Socket Number</h2>
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <p> </p>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Search" class="submit-button" />
+        </div>
+    </div>
+</div>
+}
+
+<script src="~/bundles/jqueryval"></script>
